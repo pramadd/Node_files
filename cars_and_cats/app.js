@@ -23,8 +23,17 @@ console.log('client request URL: ', request.url);
         });
     }
 
-    else if(request.url === '/images/cars.jpg'){
-        fs.readFile('./images/cars.jpg', function (errors, contents){
+    else if(request.url === '/images/tesla.jpg'){
+        fs.readFile('./images/tesla.jpg', function (errors, contents){
+            response.writeHead(200, {'Content-Type': 'image/jpg'});  
+            response.write(contents);  
+            
+            response.end(); 
+            console.log('=====   cars images===============');
+        });
+    }
+    else if(request.url === '/images/googlecar.jpg'){
+        fs.readFile('./images/googlecar.jpg', function (errors, contents){
             response.writeHead(200, {'Content-Type': 'image/jpg'});  
             response.write(contents);  
             
@@ -50,8 +59,8 @@ console.log('client request URL: ', request.url);
             });
         }
     
-        else if(request.url === '/images/cats.jpg'){
-           fs.readFile('./images/cats.jpg', function (errors, contents){
+        else if(request.url === '/images/cat.jpg'){
+           fs.readFile('./images/cat.jpg', function (errors, contents){
                response.writeHead(200, {'Content-Type': 'images/jpg'});  
                response.write(contents);  
                

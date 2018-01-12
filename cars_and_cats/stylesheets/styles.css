@@ -1,8 +1,22 @@
-.car{
+.car1{
+    height:500px;
+    width: 500px;
+}
+.car2{
+    height: 500px;
+    width: 800px;
+}
+.cat1{
     height:500px;
     width: 500px;
 }
 .cat{
-    height:500px;
-    width: 500px;
+    color: darkviolet;
+}
+.google{
+    color: indigo;
+}
+
+.tesla{
+    color: red;
 }
